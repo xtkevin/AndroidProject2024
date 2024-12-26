@@ -1,0 +1,45 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/back_2"
+    android:layout_margin="8dp">
+
+<LinearLayout
+android:orientation="vertical"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:gravity="center"
+android:padding="8dp">
+
+<!-- 天气图标 -->
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:00 PM"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <ImageView
+    android:id="@+id/iconImageView"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/cloudy_sunny"/>
+
+<!-- 时间 -->
+
+    <!-- 温度 -->
+<TextView
+    android:id="@+id/temperatureTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:text="25°C"
+    android:textColor="@color/white"
+    android:textSize="16sp" />
+</LinearLayout>
+</androidx.cardview.widget.CardView>
